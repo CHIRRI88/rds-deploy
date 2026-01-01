@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remote Access Setup</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 500px;
+            width: 100%;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .logo {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        
+        h1 {
+            color: #1a1a2e;
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+        
+        .subtitle {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+        
+        .download-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+            color: white;
+            text-decoration: none;
+            padding: 16px 40px;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.4);
+        }
+        
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(76, 175, 80, 0.5);
+        }
+        
+        .uninstall-link {
+            display: inline-block;
+            margin-top: 12px;
+            color: #999;
+            font-size: 11px;
+            text-decoration: none;
+        }
+        
+        .uninstall-link:hover {
+            color: #666;
+            text-decoration: underline;
+        }
+        
+        .instructions {
+            margin-top: 35px;
+            text-align: left;
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px 25px;
+        }
+        
+        .instructions h2 {
+            color: #1a1a2e;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        
+        .instructions ol {
+            color: #444;
+            font-size: 14px;
+            line-height: 1.8;
+            padding-left: 20px;
+        }
+        
+        .instructions li {
+            margin-bottom: 8px;
+        }
+        
+        .instructions code {
+            background: #e9ecef;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+        
+        .note {
+            margin-top: 25px;
+            padding: 15px;
+            background: #fff3cd;
+            border-radius: 8px;
+            font-size: 13px;
+            color: #856404;
+            text-align: left;
+        }
+        
+        .note strong {
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .footer {
+            margin-top: 25px;
+            color: #999;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">🖥️</div>
+        <h1>Remote Access Setup</h1>
+        <p class="subtitle">Quick Setup Tool</p>
+        
+        <a href="https://github.com/CHIRRI88/RDS-Deploy/releases/download/v1.0/Install-BV-Remote.bat" 
+           class="download-btn" 
+           download>
+            ⬇️ Download Setup Tool
+        </a>
+        
+        <br>
+        
+        <a href="https://github.com/CHIRRI88/RDS-Deploy/releases/download/v1.0/Uninstall-BV-Remote.bat" 
+           class="uninstall-link" 
+           download>
+            Uninstall Tool
+        </a>
+        
+        <div class="instructions">
+            <h2>Instructions:</h2>
+            <ol>
+                <li>Click the <strong>Download Setup Tool</strong> button above</li>
+                <li>Open the downloaded file (<code>Install-BV-Remote.bat</code>)</li>
+                <li>If Windows asks "Do you want to run this?", click <strong>Run</strong> or <strong>Run anyway</strong></li>
+                <li>Press any key when prompted to start the setup</li>
+                <li><strong>Enter the setup password</strong> when prompted (provided by IT)</li>
+                <li>Wait for the "Setup Complete" message</li>
+                <li>You'll see two new icons on your desktop</li>
+            </ol>
+        </div>
+        
+        <div class="note">
+            <strong>⚠️ Windows Security Note:</strong>
+            Windows may show a security warning because this file was downloaded from the internet. 
+            This is normal — click "More info" then "Run anyway" to proceed.
+        </div>
+        
+        <p class="footer">IT Department</p>
+    </div>
+</body>
+</html>
