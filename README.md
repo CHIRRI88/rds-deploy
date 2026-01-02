@@ -25,8 +25,8 @@ https://chirri88.github.io/rds-deploy/
 3. Runs the downloaded `.bat` file
 4. Enters the setup password when prompted
 5. Two shortcuts are created on their desktop:
-   - **BV Remote** - Primary RDS server
-   - **BV Remote 2** - Secondary RDS server
+   - **BV (Server1)** - Primary RDS server
+   - **BV (Server2)** - Secondary RDS server
 
 ## Making Updates
 
