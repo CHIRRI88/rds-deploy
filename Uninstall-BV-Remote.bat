@@ -24,5 +24,5 @@ echo.
 pause
 :: ===========================================
 :: IT TROUBLESHOOTING - Reset RDP cert trust:
-:: irm 'https://raw.githubusercontent.com/CHIRRI88/rds-deploy/main/remove-certs.ps1' | iex
+:: irm 'https://raw.githubusercontent.com/CHIRRI88/rds-deploy/main/Remove-RDP-Trust.ps1' | iex
 :: ===========================================
